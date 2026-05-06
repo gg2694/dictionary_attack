@@ -297,7 +297,7 @@
   <main class="card">
     <h1>Password</h1>
     <form id="passwordForm">
-      <input id="passwordInput" type="password" placeholder="Enter your password" autocomplete="off" autofocus />
+      <input id="passwordInput" type="password" placeholder="Enter your password" autocomplete="current-password" autofocus />
       <button type="submit">Submit</button>
     </form>
     <div id="message" class="message" aria-live="polite"></div>
@@ -345,11 +345,11 @@
         { duration: 1250, easing: "cubic-bezier(.2,.9,.2,1)" }
       );
 
-      for (let i = 0; i < 12; i++) {
-        setTimeout(createShockwave, i * 420);
+      for (let i = 0; i < 8; i++) {
+        setTimeout(createShockwave, i * 100);
       }
 
-      for (let i = 0; i < 90; i++) {
+      for (let i = 0; i < 50; i++) {
         setTimeout(createBeam, i * 55);
       }
 
@@ -362,15 +362,15 @@
         }, burst * 110);
       }
 
-      for (let i = 0; i < 620; i++) {
-        setTimeout(createConfetti, i * 14);
+      for (let i = 0; i < 400; i++) {
+        setTimeout(createConfetti, i * 10);
       }
 
-      for (let i = 0; i < 290; i++) {
+      for (let i = 0; i < 200; i++) {
         setTimeout(createOrb, i * 32);
       }
 
-      for (let i = 0; i < 360; i++) {
+      for (let i = 0; i < 260; i++) {
         setTimeout(createSparkleRain, i * 26);
       }
     }
